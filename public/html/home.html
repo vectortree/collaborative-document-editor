@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Collaborative Document Editor</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/bundle-home.js"></script>
+    </head>
+    <body>
+        <h1>Collaborative Document Editor</h1>
+        <form action="/users/logout" method="post">
+            <input type="submit" value="Logout">
+        </form>
+        <div><br/></div>
+        <form action="/media/upload" method="post" enctype="multipart/form-data">
+            <label for="file">Upload an image</label>
+            <input type="file" id="file" name="filename">
+            <input type="submit" value="Upload">
+        </form>
+        <h2>Here are 10 of the most-recently modified documents:</h2>
+        <div id="document-links">Fetching documents...<br/><br/></div>
+        <form action="/collection/create" method="post">
+            <label for="document-name">Document name: </label>
+            <input type="text" id="document-name" name="name" required>
+            <input type="submit" value="Create new document">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+<html><head><script>var exports = {};</script><script src="../library/crdt.js"></script><script>function updateCb(update, isLocal) {
+        document.write('<nobr>update> ', update, '</nobr><br/>');
+        //console.log(isLocal);
+      }
+      var crdt = new exports.CRDT(updateCb);
+      crdt.insert(0, 'Hello');
+      crdt.insert(5, 'World', { bold: true });
+      crdt.insert(5, ' ');
+      crdt.insert(12, '!');
+      crdt.insert(13, '!');
+      crdt.insert(14, '!');
+      crdt.insertImage(14, 'http://comet.cse356.compas.cs.stonybrook.edu/media/access/db5e3ff0-616d-11ed-a7be-b1ce0ef6195b');
+      var text = crdt.toHTML();
+      //console.log(text);
+      //console.log(crdt.ydoc.getText().toDelta());
+      document.write(text);</script><script defer="defer" src="crdt.js"></script></head><body><hr><p>This is a test of the CRDT library.</p><p>If the basic functionality of the library works correctly, you should see &quot;Hello <b>World</b>!&quot; above,<br/>preceded by the sequence of CRDT updates that could be sent to the client to construct this string.</p></body></html>
