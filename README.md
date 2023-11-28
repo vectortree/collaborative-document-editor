@@ -1,6 +1,6 @@
 # Collaborative Document Editor
 
-Hello, there! Here you will find the source code for a collaborative document editing web app that I wrote as a final project for a university course.
+Hello, there! Here you will find the source code for a collaborative document editing web app that I wrote as a final project for a university course (Fall 2022).
 
 ## Tools
 
