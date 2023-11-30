@@ -4,7 +4,7 @@ Hello, there! Here you will find the source code for a collaborative document ed
 
 ## Tools
 
-**Front-end**: Javascript/Typescript, HTML, CSS  
+**Front-end**: JavaScript/TypeScript, HTML, CSS  
 **Back-end**: Node.js with Fastify.js  
 **Database**: Redis  
 **Other**: Yjs, Elasticsearch, Postfix, HAProxy, etc.
