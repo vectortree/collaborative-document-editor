@@ -4,11 +4,11 @@ Hello, there! Here you will find the source code for a collaborative document ed
 
 ## Notable Features
 
-- Includes a user authentication system.
-- Supports an efficient document search engine.
-- Fetches and displays the ten most recently modified documents.
-- Supports collaboratively editing documents in the cloud.
-- Synchronizes cursor events and document content across multiple clients in real-time.
+- Includes a user authentication system
+- Supports an efficient document search engine
+- Fetches and displays the ten most recently modified documents
+- Supports collaboratively editing documents in the cloud
+- Synchronizes cursor events and document content across multiple clients in real-time
 
 ## Tools
 
